@@ -1,0 +1,10 @@
+{"sensor_id": "temp_sensor_1", "timestamp": "2023-10-01T12:00:00Z", "room": "living_room", "data": {"temperature": 22.5, "humidity": 45.2}}
+{"sensor_id": "motion_sensor_1", "timestamp": "2023-10-01T12:01:00Z", "room": "kitchen", "data": {"motion_detected": true, "motion_count": 3}}
+{"sensor_id": "energy_sensor_1", "timestamp": "2023-10-01T12:02:00Z", "room": "bedroom", "data": {"power_usage": 150.4, "device": "air_conditioner"}}
+{"sensor_id": "door_sensor_1", "timestamp": "2023-10-01T12:03:00Z", "room": "main_entrance", "data": {"door_open": true}}
+{"sensor_id": "window_sensor_1", "timestamp": "2023-10-01T12:04:00Z", "room": "living_room", "data": {"window_open": false}}
+{"sensor_id": "temp_sensor_2", "timestamp": "2023-10-01T12:05:00Z", "room": "bedroom", "data": {"temperature": 20.1, "humidity": 50.3}}
+{"sensor_id": "water_leak_sensor_1", "timestamp": "2023-10-01T12:06:00Z", "room": "basement", "data": {"leak_detected": true, "leak_level": "minor"}}
+{"sensor_id": "temp_sensor_3", "timestamp": "2023-10-01T12:07:00Z", "room": "garage", "data": {"temperature": 18.3, "humidity": 55.1}}
+{"sensor_id": "motion_sensor_2", "timestamp": "2023-10-01T12:08:00Z", "room": "hallway", "data": {"motion_detected": false, "motion_count": 0}}
+{"sensor_id": "energy_sensor_2", "timestamp": "2023-10-01T12:09:00Z", "room": "kitchen", "data": {"power_usage": 75.6, "device": "refrigerator"}}
