@@ -18,7 +18,7 @@ Available on the UCI Machine Learning Repository.
 **Data Storage**
 
 Google Big Query
-![bigData.png](bigData.png)
+![bigData.png](artifacts/bigData.png)
 **Star Schema Design for mHealth Data**
 1. Fact Table: activity_fact
 The fact table holds the core, granular data with sensor readings and activity labels. Each row represents a sensor reading at a given timestamp for a specific activity performed by a subject.
@@ -34,22 +34,37 @@ The dimension tables store descriptive information about activities, subjects, s
 **Machine Learning Layer**
 - Feature Engineering:
 1. Extract average heart rate and other sensor features
-![feature1.png](feature1.png)
+![feature1.png](artifacts/feature1.png)
 2. Activity Pattern Analysis
-![feature2.png](feature2.png)
+![feature2.png](artifacts/feature2.png)
 3. Sensor Performance Analysis
-![feature3.png](feature3.png)
+![feature3.png](artifacts/feature3.png)
 - Model Development:
 
-
+**Model Training and Evaluation**
 Anomaly Detection Algorithms: 
 Use algorithm - Isolation Forest
-![IsolationForest.png](IsolationForest.png)
+![IsolationForest.png](artifacts/IsolationForest.png)
 
 **Store Detected Anomalies Back to BigQuery**
-![anomalies0.png](anomalies0.png)
-![anomalies1.png](anomalies1.png)
+![anomalies0.png](artifacts/anomalies0.png)
+![anomalies1.png](artifacts/anomalies1.png)
 
+
+**Data Visualization and Monitoring Dashboard**
+
+Build a monitoring dashboard using tools with *Google Data Studio (Looker Studio)*
+Include visualizations such as time-series plots, daily activity patterns, anomaly occurrence graphs, and overall health scores.
+- Real-Time Insights:
+
+Display real-time metrics, alerts, and system health on the dashboard.
+Implement custom views for different stakeholders (e.g., elderly individual’s family, caregivers, health providers).
+
+![lookerstudio-report.png](artifacts/lookerstudio-report.png)
+Model Training and Evaluation
+After preparing the dataset:
+
+## Future Work ##
 
 **Alerting and Notification System**
 - Event Trigger System:
@@ -60,28 +75,3 @@ Configure the system to trigger alerts when an anomaly (e.g., an unexpected drop
 
 Integrate with SMS, email, or mobile push notifications to alert caregivers and family members of anomalies.
 Consider a configurable threshold setting for different users to customize alerts based on sensitivity.
-
-**Data Visualization and Monitoring Dashboard**
-- Dashboard Development:
-
-Build a monitoring dashboard using tools like Tableau, Power BI, or Grafana.
-Include visualizations such as time-series plots, daily activity patterns, anomaly occurrence graphs, and overall health scores.
-- Real-Time Insights:
-
-Display real-time metrics, alerts, and system health on the dashboard.
-Implement custom views for different stakeholders (e.g., elderly individual’s family, caregivers, health providers).
-
-Model Training and Evaluation
-After preparing the dataset:
-
-Split Data: Create training and test sets.
-Select Model: Use machine learning models like Random Forest, SVM, or deep learning models like LSTMs (for time series).
-Evaluate: Use metrics such as accuracy, F1-score, and confusion matrix to evaluate activity recognition performance.
-
-Anomaly Detection
-For anomaly detection (e.g., identifying unusual heart rates), you could implement threshold-based or machine learning-based approaches.
-
-Threshold-based: Define acceptable ranges and flag outliers.
-ML-based: Use unsupervised learning techniques like Isolation Forests or One-Class SVM.
-Example for threshold-based anomaly detection on ecg_1:
-
